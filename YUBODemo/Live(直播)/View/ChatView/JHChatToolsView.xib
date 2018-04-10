@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Gvu-sx-OCm" customClass="JHChatToolsView" customModule="YUBODemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="愉快地和主播聊一聊吧" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rIh-5v-3Cj">
+                    <rect key="frame" x="5" y="5" width="300" height="34"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFd-At-ryu">
+                    <rect key="frame" x="310" y="5" width="60" height="34"/>
+                    <color key="backgroundColor" red="0.81176470590000005" green="0.58431372550000005" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Prp-P4-UhD"/>
+                    </constraints>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rIh-5v-3Cj" firstAttribute="leading" secondItem="Gvu-sx-OCm" secondAttribute="leading" constant="5" id="GXY-4L-fp9"/>
+                <constraint firstAttribute="bottom" secondItem="xFd-At-ryu" secondAttribute="bottom" constant="5" id="KpQ-ak-po9"/>
+                <constraint firstItem="xFd-At-ryu" firstAttribute="leading" secondItem="rIh-5v-3Cj" secondAttribute="trailing" constant="5" id="XuE-a0-caK"/>
+                <constraint firstAttribute="trailing" secondItem="xFd-At-ryu" secondAttribute="trailing" constant="5" id="a5n-ny-uuO"/>
+                <constraint firstItem="xFd-At-ryu" firstAttribute="top" secondItem="Gvu-sx-OCm" secondAttribute="top" constant="5" id="jzo-m2-To5"/>
+                <constraint firstItem="rIh-5v-3Cj" firstAttribute="top" secondItem="Gvu-sx-OCm" secondAttribute="top" constant="5" id="kCd-fW-Tv0"/>
+                <constraint firstAttribute="bottom" secondItem="rIh-5v-3Cj" secondAttribute="bottom" constant="5" id="yc2-HU-ZVp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="QGa-uf-f0L"/>
+            <connections>
+                <outlet property="inputTextField" destination="rIh-5v-3Cj" id="0Uo-a1-AGF"/>
+            </connections>
+            <point key="canvasLocation" x="45.5" y="107"/>
+        </view>
+    </objects>
+</document>
